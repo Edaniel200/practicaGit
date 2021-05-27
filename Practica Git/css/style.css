@@ -12,11 +12,16 @@ section{
 	justify-content: center;
 	align-items: center;
 
-	background-color: white;
+	flex-direction: column;
+
+	background-color: grey;
+
 }
 section > p{
 	width: 500px;
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 1px 1px 1px 2px #ccc;
+
+	margin-bottom: 10px;
 }
