@@ -1,8 +1,8 @@
-window.addEventListener("load", () => {
+startApp = () =>{
 
-	//console.log("Comienzo del proyecto");
 	let seccion = document.getElementById("seccion");
 	let texts = document.getElementsByClassName("texts");
+	
 
 	seccion.addEventListener("click", (objeto)=>{ changeColor(objeto, "white", "gey") });
 
@@ -10,13 +10,11 @@ window.addEventListener("load", () => {
 
 		texts[i].addEventListener("click", (objeto)=>{ changeColorText(objeto, "black", "white") });
 	}
-	
 
-});
-
+}
 
 
-function changeColor(...args){
+changeColor = ...args =>{
 
 	//console.log("click");
 
@@ -26,7 +24,7 @@ function changeColor(...args){
 
 
 }
-function changeColorText(...args){
+changeColorText = ...args => {
 
 	//console.log(args[1]);
 
@@ -37,3 +35,5 @@ function changeColorText(...args){
 
 
 }
+
+window.addEventListener("load",startApp());
